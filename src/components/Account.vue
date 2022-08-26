@@ -127,7 +127,7 @@
 
     
 
-    <!--Waves Container-->
+    <!--Olas importadas-->
     <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -142,7 +142,7 @@
         </g>
         </svg>
     </div>
-    <!--Waves end-->
+    <!--Fin olas-->
 
 </div>
 <div class="content flex">
@@ -195,6 +195,7 @@ export default {
 
                 this.$emit('completedLogIn', dataLogin)
                 this.mostrarLogueoExitoso = true
+                localStorage.setItem("usuarioLogueado", true);
             })
             .catch((error) => {
                 if (error.response.status == "401")

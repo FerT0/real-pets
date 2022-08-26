@@ -13,7 +13,8 @@
           <button v-on:click="loadHome">INICIO</button>
           <button v-on:click="loadProducts">PRODUCTOS</button>
           <button v-on:click="loadServices">SERVICIOS</button>
-          <button v-on:click="loadAccountPage">CUENTA</button>
+          <button v-on:click="loadAccountPage" v-if="isUserLoggedIn()">CUENTA</button>
+          <button v-on:click="logOut()" v-if="!isUserLoggedIn()">CERRAR SESIÓN</button>
 
         </nav>
       </div>
@@ -152,6 +153,17 @@ export default {
     },
     loadServices: function(){
       this.$router.push({name: 'services'})
+    },
+    isUserLoggedIn: function(){
+      if (localStorage.getItem("usuarioLogueado") == 'true'){
+        return false
+      } else {
+        return true
+      }
+    },
+      logOut: function(){
+        localStorage.clear();
+        this.$router.push({name: 'root'})
     }
 
   }

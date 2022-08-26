@@ -10,6 +10,108 @@
     margin-right: -8px;
 }
 
+.mensajeConfirmacionCompra {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  width: 20%;
+  border-radius: 0px 0px 15px 15px;
+  height: 280px;
+  margin-top: 320px;
+  animation: entradaMensajeConfirmacionCompra;
+  animation-duration: 0.5s;
+  transform: translateX(200%)
+  
+
+}
+
+@keyframes entradaMensajeConfirmacionCompra {
+  0%{
+    transform:scaleX(-0.5%)
+  }
+
+  
+}
+
+.mensajeColorConfirmacionCompra {
+  width: 100%;
+  height: 110px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #0099ff;
+  position: absolute;
+  z-index: 10;
+  transform: translateY(-100%);
+}
+
+.mensajeColorConfirmacionCompra img {
+  margin-top: 20px;
+  transform: translateX(220%);
+}
+.mensajeConfirmacionCompra h1 {
+  font-family: 'montserratregular';
+  margin-top: 30px;
+  font-size: 20px;
+  transform: translateX(27%);
+  
+  
+}
+
+.mensajeConfirmacionCompra h3 {
+  font-family: 'montserratregular';
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: -20px;
+  font-size: 17px;
+  margin-left: 20px;
+
+}
+
+.mensajeConfirmacionCompra span {
+  font-size: 15px;
+  
+}
+
+.mensajeConfirmacionCompra p{
+  font-family: 'montserratregular';
+  color: #7b7e84;
+  margin-top: 55px;
+  font-size: 13px;
+  width: 50%;
+  margin-left: 93px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.mensajeConfirmacionCompra button{
+  border: 0;
+  transform: translateX(48%);
+  margin-top: -40px;
+  background-color: #0099ff;
+  color: white;
+  font-family: 'montserratregular';
+  font-size: 14px;
+  border-radius: 10px;
+  width: 190px;
+  height: 30px;
+  transition: background-color 0.5s;
+  
+}
+
+.mensajeConfirmacionCompra button:hover {
+  background-color: #01779e;
+}
+
+.fondoConfirmacionCompra {
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  opacity: 0.5;
+  margin-left: -8px;
+  width: 100%;
+  height: 100%;
+}
+
 .barraNav {
     margin-top: 3px;
     float: right;
@@ -22,7 +124,7 @@
   
   @keyframes entradaBarraNav {
     0%{
-      margin-right: 600px;
+      margin-right: -600px;
     }
   
     100%{
@@ -77,9 +179,19 @@
 
 
 .contenido {
-    width: 1000px;
+    width: 1200px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 100px;
+    margin-left: 550px;
+    animation: entradaContenido;
+    animation-duration: 0.5s;
+}
+
+@keyframes entradaContenido {
+  0%{
+    transform:scaleX(-0.5%)
+  }
+
 }
 
 
