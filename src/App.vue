@@ -14,6 +14,17 @@ export default{
     }
   },
   methods:{
+    completedLogIn: function(data) {
+      localStorage.setItem("isAuth", true);
+      localStorage.setItem("usuario", data.usuario);
+      localStorage.setItem("token_access", data.token_acess);
+      localStorage.setItem("token_refresh", data.token_refresh);
+      alert("Autenticación exitosa");
+
+
+
+    },
+    completedSignUp: function(data) {}
 
 
   },

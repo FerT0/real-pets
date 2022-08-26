@@ -11,8 +11,8 @@
       <div class="barraNav">
         <nav>
           <button v-on:click="loadHome">INICIO</button>
-          <button>PRODUCTOS</button>
-          <button>SERVICIOS</button>
+          <button v-on:click="loadProducts">PRODUCTOS</button>
+          <button v-on:click="loadServices">SERVICIOS</button>
           <button v-on:click="loadAccountPage">CUENTA</button>
 
         </nav>
@@ -146,7 +146,14 @@ export default {
     },
     loadHome: function(){
       this.$router.push({name: 'root'})
+    },
+    loadProducts: function(){
+      this.$router.push({name: 'products'})
+    },
+    loadServices: function(){
+      this.$router.push({name: 'services'})
     }
+
   }
 
 }
