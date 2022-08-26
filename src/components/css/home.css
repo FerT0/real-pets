@@ -1,0 +1,487 @@
+.app{
+  width: 100%;
+  height: 100%;
+}
+
+
+.fa-paw, .fa-shower, .fa-scissors {
+  font-size: 60px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+}
+
+.serviciosPresentacion {
+  position: relative;
+  top: -100px;
+  left: 450px;
+  max-width: 1000px;
+  font-size: 15px;
+  
+
+}
+
+.serviciosPresentacion h2, .serviciosPresentacion p {
+  font-family: 'open_sansregular';
+}
+
+.serviciosPresentacion p{
+  color: black;
+  
+}
+
+.presentacionPagina h2 {
+  font-family: 'open_sansregular';
+  text-align: center;
+  margin-top: -10px;
+}
+
+.presentacionPagina p {
+  font-family: 'open_sansregular';
+  color: #8c8c8c;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.serviciosPresentacion h1 {
+  font-family: 'open_sansbold';
+}
+
+.servicio1, .servicio2 {
+  top: 20px;
+}
+
+.servicioTexto {
+  top: 120px;
+  position: relative;
+}
+
+
+
+.servicio1, .servicio2, .servicio3{
+  display: inline-block;
+  position: relative;
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-right: 25px;
+  width: 300px;
+  height: 340px;
+  border-radius: 12px;
+  transition: transform 0.5s;
+  box-shadow: 0px 0px 5px 1px;
+
+}
+
+.servicio1:hover, .servicio2:hover, .servicio3:hover{
+    transform: scale(1.1);
+}
+
+
+.servicio1 p, .servicio2 p, .servicio3 p{
+  padding: 0px 5px 0px 5px;
+}
+
+.servicio1 h2, .servicio2 h2, .servicio3 h2{
+  color: #00a9e0;
+  margin-bottom: -8px;
+}
+
+.servicio1 button, .servicio2 button, .servicio3 button{
+  position: relative;
+  margin-top: 45px;
+  border: 0;
+  background-color: #00a9e0;
+  color: white;
+  width: 165px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.servicio1 button:hover, .servicio2 button:hover, .servicio3 button:hover{
+  background-color: #01779e;
+
+}
+
+.servicio1 button, .servicio2 button {
+  top: -16px;
+}
+
+.circulo {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #00a9e0;
+  position: absolute;
+  left: 105px;
+  
+  
+}
+
+.mascota1 img, .mascota2 img, .mascota3 img, .mascota4 img {
+  height: 290px;
+  width: 250px;
+  border-radius: 120px;
+  outline: 5px solid white;
+  margin-right: 55px;
+  transition: transform 0.5s;
+  
+}
+
+.mascota1 img:hover, .mascota2 img:hover, .mascota3 img:hover, .mascota4 img:hover {
+  transform: scale(1.3);
+  box-shadow: 2px 2px 5px 5px;
+}
+
+
+
+.mascota1, .mascota2, .mascota3, .mascota4{
+  display: inline-block;
+  position: relative;
+  top: -400px;
+  left: 300px;
+}
+
+
+.body {
+  margin-top: -11px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.body img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.galeria {
+  margin-top: 30px;
+  margin-left: -8px;
+  margin-right: -8px;
+  height: 450px;
+}
+
+.galeriaTexto {
+  position: relative;
+  top: -400px;
+  left: 700px;
+  font-family: 'league_spartanbold';
+  color: white;
+  font-size: 50px;
+  width: 200px;
+  
+  
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+
+
+.barraNav {
+  margin-top: -8px;
+  float: right;
+  margin-right: 296px;
+  animation: entradaBarraNav;
+  animation-duration: 1s;
+
+}
+
+@keyframes entradaBarraNav {
+  0%{
+    margin-top: -80px;
+  }
+
+  100%{
+    margin-top: -8px;
+  }
+  
+}
+
+.logoNav {
+  display: inline;
+  margin-left: 300px;
+  
+  
+}
+
+.logoNav img {
+  transform: translateY(-15%);
+  animation: entradaLogoNav;
+  animation-duration: 1s;
+}
+
+@keyframes entradaLogoNav {
+  0%{
+    transform: translateY(-105%);
+  }
+}
+
+
+
+.logoNav:hover{
+  cursor: pointer;
+}
+
+.barraNav button{
+  border: 0;
+  color: black;
+  padding: 26px 16px;
+  font-family: open_sanssemibold;
+  transition: color 0.5s;
+  font-size: 14px;
+  background-color: white;
+  
+  
+}
+
+.barraNav button:hover{
+  background-color: #00a9e0;
+  transition: background-color 0.5s linear;
+  cursor: pointer;
+  color: white;
+
+}
+
+.contacto {
+  margin-top: -135px;
+  margin-left: -8px;
+  margin-right: -8px;
+  text-align: center;
+  height: 500px;
+  
+}
+
+.contacto h1 {
+  padding-top: 50px;
+  color: #00a9e0;
+  font-family: 'league_spartanbold';
+  font-size: 50px;
+  padding-bottom: 10px;
+
+}
+
+.telefono, .direccion, .correocontacto {
+  display: inline-block;
+  position: relative;
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-right: 25px;
+  width: 300px;
+  height: 200px;
+  outline: solid 1px gray;
+  padding-top: 90px;
+  transition: transform 1s;
+}
+
+
+.telefono:hover, .direccion:hover, .correocontacto:hover{
+  outline: solid 1px #00a9e0;
+  transform: translateY(-20px);
+  
+}
+
+.fa-phone, .fa-location-dot, .fa-at{
+  color: #00a9e0;
+  font-size: 40px;
+  
+}
+
+.telefono h3, .direccion h3, .correocontacto h3 {
+  font-family: 'open_sansbold';
+  color: black;
+}
+
+.telefono p, .direccion p, .correocontacto p {
+  font-family: 'open_sansregular';
+  color: #8c8c8c;
+  margin-top: -13px;
+}
+
+.footer {
+  background-color: #222222;
+  height: 100px;
+  width: auto;
+  margin-left: -8px;
+  margin-bottom: -8px;
+  margin-right: -8px;
+}
+
+.footer h3 {
+  position: absolute;
+}
+
+
+.siguenos {
+  left: 275px;
+  font-size: 16px;
+  color: white;
+  font-family: 'open_sansregular';
+}
+
+
+.llamanos {
+  left: 75px;
+  font-size: 16px;
+  color: white;
+  font-family: 'open_sansregular';
+
+}
+
+.llamanos2{
+  font-size: 13px;
+  padding-top: 43px;
+  color: #a9a9a9;
+  left: 75px;
+  font-family: 'open_sansregular';
+}
+
+.circuloP {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 55px;
+  background-color: #333333;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  left: 235px;
+  color: white;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-skype, .fa-youtube, .fa-instagram {
+  padding-top: 6px;
+  font-size: 12px;
+  cursor:pointer;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fuentes/open_sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('fuentes/open_sans/opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('fuentes/open_sans/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('fuentes/open_sans/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fuentes/open_sans/opensans-italic-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fuentes/open_sans/opensans-light-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('fuentes/open_sans/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fuentes/open_sans/opensans-semibold-webfont.woff2') format('woff2'),
+         url('fuentes/open_sans/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'league_spartanbold';
+  src: url('fuentes/leaguespartan/leaguespartan-bold-webfont.woff2') format('woff2'),
+       url('fuentes/leaguespartan/leaguespartan-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
